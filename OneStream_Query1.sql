@@ -19,7 +19,7 @@ WHERE
   ) 
   AND transaction.posting = 'T' 
   AND transactionLine.subsidiary IN ('117')
-  AND transaction.postingperiod IN (BUILTIN.PERIOD('LP', 'START', 'NOT_LAST', 'BETWEEN'))
+  AND transaction.postingperiod IN (BUILTIN.PERIOD('TP', 'START', 'NOT_LAST', '<')))
 GROUP BY
   subsidiary.name,
   BUILTIN.DF(TransactionAccountingLine.account),
