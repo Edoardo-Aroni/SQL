@@ -1,3 +1,4 @@
+-- Dynamic period values calculated with subquery factorying --
 -- calculating this FY beginning period --
 WITH accounting_period_subquery AS (
     SELECT 
